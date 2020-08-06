@@ -1,0 +1,41 @@
+#include <stdio.h> 
+
+ int main () {
+ int VALOR, N100, N50, N20, N10, N5, N2, N1;
+ double resto;
+
+ scanf ("%d", &VALOR);
+
+ N100=  VALOR/100;
+ resto= VALOR - N100*100;
+
+ N50= resto/50;
+ resto= resto - N50*50; 
+
+ N20= resto/20;
+ resto= resto - N20*20;
+
+ N10= resto/10;
+ resto= resto - N10*10;
+
+ N5= resto/5;
+ resto= resto - N5*5;
+
+ N2= resto/2;
+ resto= resto - N2*2;
+ 
+ N1= resto/1;
+ resto = resto - N1*1;
+
+ printf("%d\n", VALOR);
+ printf("%d nota(s) de R$ 100,00\n", N100);
+ printf("%d nota(s) de R$ 50,00\n", N50);
+ printf("%d nota(s) de R$ 20,00\n", N20);
+ printf("%d nota(s) de R$ 10,00\n", N10);
+ printf("%d nota(s) de R$ 5,00\n", N5);
+ printf("%d nota(s) de R$ 2,00\n", N2);
+ printf("%d nota(s) de R$ 1,00\n", N1);
+
+ return 0;
+
+ }

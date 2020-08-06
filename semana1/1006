@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main() {
-  double A, B, MEDIA;
-  double p1= 3.5;
-  double p2= 7.5;
-
+  double A, B, C, MEDIA;
+  double p1=2;
+  double p2=3;
+  double p3=5;
+  
   scanf("%lf", &A);
   scanf("%lf", &B);
+  scanf("%lf", &C);
 
-  MEDIA= (A*p1+B*p2)/11;
-  
-  printf("MEDIA = %.5lf\n", MEDIA);
+  MEDIA= (A*p1+B*p2+C*p3)/10;
 
-return 0;
+  printf("MEDIA = %.1lf\n", MEDIA);
 
 }

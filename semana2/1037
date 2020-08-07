@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
  
 int main(){
 double ponto;
@@ -14,8 +13,7 @@ if (ponto>=0 && ponto <= 25){
   printf("Intervalo (50,75]\n");
 } else if  (ponto>75 && ponto <= 100){
   printf("Intervalo (75,100]\n"); }
-  
- if (ponto<0 || ponto> 100) {
+  else {
     printf("Fora de intervalo\n"); }
 
 return 0;

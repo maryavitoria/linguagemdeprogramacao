@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main (){
+  float s, n1, n2, n3; // s é salario e n são os niveis de taxa
+
+	scanf("%f", &s);
+
+	if (s >= 0.0 && s <= 2000.0){
+		printf("Isento\n");
+	} else {
+    s-= 2000.0;
+		if (s <= 1000.0){
+      n1 = s*0.08;
+			printf("R$ %.2f\n", n1);
+		} else {
+      n1 = 80.0;
+			s-= 1000.0;
+			if (s <= 1500.0){
+        n2 = s*0.18;
+				printf("R$ %.2f\n", n1+n2);
+
+			}else {
+		   	n2 = 270.0;
+				s-= 1500.0;
+				n3 = s*0.28;
+				printf("R$ %.2f\n", n1+n2+n3);
+
+			}
+		}
+	}
+}

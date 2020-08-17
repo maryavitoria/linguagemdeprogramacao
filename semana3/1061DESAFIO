@@ -34,6 +34,6 @@ int main(){
     printf("%d minuto(s)\n", MIN);
     printf("%d segundo(s)\n", SEG);
 
-    
+    return 0;
     
 }

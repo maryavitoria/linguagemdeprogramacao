@@ -1,20 +1,21 @@
 #include <stdio.h>
- 
-int main(){
-double ponto;
 
-scanf("%lf", &ponto);
+int main ()
+{
 
-if (ponto>=0 && ponto <=25){
+float a = 0;
+scanf("%f", &a);
+
+if (a >= 0 && a <= 25) {
   printf("Intervalo [0,25]\n");
-} else if (ponto>25 && ponto <=50){
-  printf("Intervalo (25, 50]\n");
-} else if (ponto>50 && ponto <=75){
+} else if (a > 25 && a <= 50) {
+  printf("Intervalo (25,50]\n");
+}else if (a > 50 && a <= 75){
   printf("Intervalo (50,75]\n");
-} else if (ponto>75 && ponto <=100){
-  printf("Intervalo (75,100]\n"); }
-  else if (ponto <0 || ponto>100) {
-  printf("Fora de intervalo\n"); }
+}else if (a > 75 && a <= 100){
+  printf("Intervalo (75,100]\n");
+}else {
+  printf("Fora de intervalo\n");}
 
 return 0;
 }

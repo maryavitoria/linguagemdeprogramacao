@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	int inicio,fim;
+	scanf("%d %d", &inicio, &fim);
+	if (inicio>12 && fim<12)
+	{
+		printf("O JOGO DUROU %d HORA(S)\n", abs(abs(inicio-12)-(fim+12)));
+	}
+	if (inicio==0&&fim==0 || inicio==fim)
+	{
+		printf("O JOGO DUROU 24 HORA(S)\n");
+	}
+	if (inicio<12&&fim>12)
+	{
+		printf("O JOGO DUROU %d HORA(S)\n", abs((inicio+12)-abs(fim+12)));
+	}
+	
+}

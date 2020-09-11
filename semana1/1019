@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+int d, h, m, s;
+
+scanf ("%d", &d);
+ 
+h = d/3600;
+m = (d - h*3600)/60;
+s = ((d - h*3600) - m*60);
+
+printf ("%d:%d:%d\n", h, m, s);
+
+return 0;
+
+}

@@ -1,0 +1,31 @@
+#include <stdio.h>
+ 
+int main() {
+    
+    int hi, mi, hf, mf, ht, mt;
+    scanf("%d%d%d%d", &hi, &mi, &hf, &mf);
+    
+    if ((mi == mf) && (hi == hf)) {
+        mt = mf - mi;
+        ht = 24;
+    }
+    
+    else {   
+        if ((mf - mi) >= 0)
+            mt = mf - mi;
+        else {
+            mf = mf + 60;
+            mt = mf - mi;
+            hf--;
+        }
+        
+        if ((hf - hi) >= 0)
+            ht = hf - hi;
+        else {
+            hf = hf + 24;
+            ht = hf - hi;
+        }
+    }    
+    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", ht, mt);
+    return 0;
+}

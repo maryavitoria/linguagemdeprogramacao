@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+ int N, mult, res;
+    scanf("%d", &N);
+
+    for(mult=1; mult<=10; mult++) {
+        res = mult*N;
+        printf("%d x %d = %d\n", mult, N, res);
+    }
+    
+    return 0;
+}

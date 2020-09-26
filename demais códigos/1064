@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int posi = 0;
+    float x, soma = 0;
+    int i;  
+    
+    for( i = 0; i < 6; i++){
+      	scanf("%f", &x);
+       	if( x > 0){
+       		soma = soma + x;
+       		posi++;  
+       	}
+    }
+
+    printf("%d valores positivos\n", posi);
+    printf("%.1f\n", soma/posi);
+
+   return (0);
+}

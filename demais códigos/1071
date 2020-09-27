@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  int cont, X, Y, aux, soma;
+ 
+  scanf("%d%d",&X,&Y);
+   if(X>Y){
+    aux=X;
+    X=Y;
+    Y=aux;
+  }
+  
+  soma=0;
+  for(cont=X+1; cont<Y; cont++){
+    if(cont%2!=0)
+      soma+=cont;
+  }
+    
+  printf("%d\n",soma);
+  return 0;
+}

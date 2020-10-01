@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+// verificando a matriz 3por3
+int verifica(int linha, int x, int m[9][9]){
+    int soma= 0, i;
+    for(i=x; i<x + 3; i++){
+        soma += m[linha][i];
+    }
+
+    linha++;
+    for(i=x; i<x + 3; i++){
+        soma += m[linha][i];
+    }
+ 
+    linha++;
+    for(i=x; i<x + 3; i++){
+        soma += m[linha][i];
+    }
+
+    if(soma == 45){
+        return 0;
+    }else{
+        return 1;
+    }
+}

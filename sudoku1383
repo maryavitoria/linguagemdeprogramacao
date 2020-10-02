@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 // verificando a matriz 3por3
 int verifica(int linha, int x, int m[9][9]){
@@ -24,3 +25,19 @@ int verifica(int linha, int x, int m[9][9]){
         return 1;
     }
 }
+//principal
+int main(){
+    int x=1, n, i, j, k, m[9][9];
+    int flag ,*vet;
+    
+    scanf("%d",&n);
+    
+    while(n--){
+        // leitura
+        for(i=0; i<9; i++){
+            for(j=0; j<9; j++){
+                scanf("%d",&m[i][j]);
+            }
+        }
+ 
+        printf("Instancia %d\n",x);

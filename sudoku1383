@@ -41,3 +41,21 @@ int main(){
         }
  
         printf("Instancia %d\n",x);
+         
+        flag=0
+        
+        // verificando numeros repetidos na linha
+        for(i=0;i<9;i++){
+            vet = (int*)calloc(10, sizeof(int));
+            
+            for(j=0;j<9;j++){
+                if(vet[m[i][j]] == 0){
+                  vet[m[i][j]] = m[i][j];
+               
+                }else{
+                    flag =1;
+                    i=9;
+                    j=9;
+                }
+            }
+        }

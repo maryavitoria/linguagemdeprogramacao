@@ -42,7 +42,7 @@ int main(){
  
         printf("Instancia %d\n",x);
          
-        flag=0
+        flag=0;
         
         // verificando numeros repetidos na linha
         for(i=0;i<9;i++){
@@ -53,7 +53,7 @@ int main(){
                   vet[m[i][j]] = m[i][j];
                
                 }else{
-                    flag =1;
+                    flag=1;
                     i=9;
                     j=9;
                 }

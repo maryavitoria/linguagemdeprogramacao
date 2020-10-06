@@ -74,3 +74,21 @@ int main(){
         }
         if(flag == 1){
             puts("NAO");
+}else{
+            // verifica as 9 matrizes 3por3
+            // soma dos elementos=45, retorna 0
+            //0=sim
+            flag += verifica(0,0,m);
+            flag += verifica(0,3,m);
+            flag += verifica(0,6,m);
+            flag += verifica(3,0,m);
+            flag += verifica(3,3,m);
+            flag += verifica(3,6,m);
+            flag += verifica(6,0,m);
+            flag += verifica(6,3,m);
+            flag += verifica(6,6,m);
+            if(flag == 0){
+                puts("SIM");
+            }else{
+                puts("NAO");
+            }

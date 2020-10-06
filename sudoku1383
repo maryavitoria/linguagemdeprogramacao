@@ -92,3 +92,9 @@ int main(){
             }else{
                 puts("NAO");
             }
+}
+        puts(""); //linha
+        x++;//instancia 
+    }
+    return 0;
+}
